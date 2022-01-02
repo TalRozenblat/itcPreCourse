@@ -3,7 +3,8 @@
 }
 
 body {
-  background-image: linear-gradient(to bottom right, lightgray, white);
+  /*background-image: linear-gradient(to bottom right, lightgray, white);*/
+  background-color:#2F2FA2;
   font-family: sans-serif;
   font-size: 16px;
   height: 100vh;
@@ -67,6 +68,9 @@ body {
   text-align: center;
 }
 
+nav{
+  width: 100%;
+}
 nav ul{
   list-style-type: none;
   padding: 0;
