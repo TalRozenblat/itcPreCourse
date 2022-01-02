@@ -101,3 +101,37 @@ nav li a:hover{
 
 }
 
+
+.map-frame {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: #0074d9;
+  color: white;
+  font-size: 20px;
+  padding: 5px 20px;
+  border-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prev {
+  margin-right: 15px;
+}
+
+.btn:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
