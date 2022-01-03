@@ -101,15 +101,6 @@ nav li a:hover{
 
 }
 
-
-.map-frame {
-  display: none;
-}
-
-.active {
-  display: block;
-}
-
 .btns {
   width: 100%;
   display: flex;
@@ -132,6 +123,36 @@ nav li a:hover{
 }
 
 .btn:disabled {
-  background-color: #666;
-  cursor: not-allowed;
+  background-color:#2F2FA2;
+  color: #2F2FA2;
+  cursor:default;
+  
+}
+
+.map{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-items:right;
+ 
+}
+
+.cities {
+  padding:0;
+  margin:0;
+  display:flex;
+  flex-flow: row nowrap;
+}
+
+.cities.text{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content:start;
+}
+
+section{
+  margin-left: 2rem;
 }
