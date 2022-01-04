@@ -4,12 +4,14 @@
 
 body {
   /*background-image: linear-gradient(to bottom right, lightgray, white);*/
-  background-color:#2F2FA2;
+  background-color:#C1D9D2;
   font-family: sans-serif;
   font-size: 16px;
   height: 100vh;
   margin: 0;
   padding: 0;
+  color: #19402A;
+
 }
 
 .button {
@@ -75,20 +77,20 @@ nav ul{
   list-style-type: none;
   padding: 0;
   margin: 0;
-  background-color: #2F2FA2;
+  background-color: #69BFA0;
+  
 }
 
 nav li{
   text-align: center;
   display: inline-block;
   width: 8rem;
- 
   
 }
 
 nav li a{
   font-size: 1.5rem;
-  color: white;
+  color: #19402A; 
   font-weight: bold;
   text-decoration: none;
   display: block;
@@ -96,9 +98,33 @@ nav li a{
 }
 
 nav li a:hover{
-  background-color: #F64C72;
-  color:#2F2FA2;
+  background-color: #19402A;
+  color:#69BFA0;
 
+}
+
+#clickable{
+  margin:0;
+  padding-left: 0;
+  width:24rem;
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+
+.clickable ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width:40%;
+  margin-right:2.5rem;
+}
+
+.clickable ul li a{
+  color: #19402A;
+  text-decoration: none;
+  
 }
 
 .btns {
@@ -109,8 +135,8 @@ nav li a:hover{
 }
 
 .btn {
-  background-color: #0074d9;
-  color: white;
+  background-color:  #69BFA0;
+  color:#19402A;
   font-size: 20px;
   padding: 5px 20px;
   border-color: transparent;
@@ -123,8 +149,8 @@ nav li a:hover{
 }
 
 .btn:disabled {
-  background-color:#2F2FA2;
-  color: #2F2FA2;
+  background-color:#C1D9D2;
+  color: #C1D9D2;
   cursor:default;
   
 }
@@ -155,4 +181,58 @@ nav li a:hover{
 
 section{
   margin-left: 2rem;
+  margin-right: 2rem;
+}
+ 
+form{
+  display:flex;
+  flex-flow: column nowrap;
+  border: 3px #9AA692;
+  width: 50%;
+  background-color: #9AA692;
+  border-radius: 10px;
+  margin: 1.5rem 0 0 1.5rem;
+  padding: 0.5rem 0 0 0.5rem;
+  height:30rem;
+}
+
+label{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+input{
+  width: 35%;
+  height: 7%;
+  border-radius: 5px;
+  border:0px;
+}
+
+textarea{
+  width: 50%;
+  height: 10rem;
+  margin-bottom: 3rem;
+  font-size: 0.8rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#letsTalk {
+  padding: 2rem;
+}
+
+#submitBtn{
+  width: 20%;
+  margin-bottom:1rem;
+  
+}
+
+.submitWrapper{
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin:0;
+  padding:0;
+ 
+  
 }

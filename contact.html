@@ -15,27 +15,30 @@
             <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
-      <h1>Let's talk</h1>
+      <h1 id="letsTalk">Let's talk</h1>
       <form>
         
-        first name
         <label for="firstName">First name:</label>
         <input required type="text" id="firstName" name = "firstName">
-        last name
+        
         <label for="lastName">Last name:</label>
         <input type="text" id="lastName" name = "lastName">
-        email
+        
         <label for="email">Email:</label>
-        <input type="email" id="email" name = "email">
+        <input required type="email" id="email" name = "email">
         
         additional input type where the user can enter additional information in a non text form.
         all fields except last name are reqired.
         <label for="mytext">Enter something here:</label>
-        <input type="text" id="mytext">
+        <input required type="text" id="mytext">
 
-        comment
+        
         <label for="comment">Comment:</label>
-        <textarea id="comment"></textarea name>
+        <textarea required id="comment"></textarea>
+        
+        <div class="submitWrapper btns">
+          <button class ="btn" id="submitBtn" type="submit">Submit</button>
+        </div>
 
       </form>
 </body>
