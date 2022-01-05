@@ -7,6 +7,8 @@ fetch(GITHUB_URL)
   .then(function(data) {
     const profileImage = document.getElementById("profile-image");
     profileImage.src = data.avatar_url;
+    const profileName = document.getElementById("myName");
+    profileName.innerHTML = data.name;
   });
 
 
@@ -55,3 +57,27 @@ function init() {
 }
 
 init();
+
+
+function findIceCreamChoice(){
+  let flavour = document.getElementsByName('ic');
+
+  for (let i = 0; i < flavour.length; i++){
+    if(flavour[i].checked){
+      return flavour[i].value;
+    }
+  }
+}
+
+function send() {
+    let fName = document.querySelector("#firstName");
+    let lName = document.querySelector("#lastName");
+    let email = document.querySelector("#email");
+    let comment = document.querySelector('#comment');
+    console.log("First name:",fName.value);
+    console.log("Last name:",lName.value);
+    console.log("Email:",email.value);
+    console.log("Comment:",comment.value);
+    console.log("Favourite ice cream flavour:",findIceCreamChoice());
+  }
+

@@ -27,19 +27,32 @@
         <label for="email">Email:</label>
         <input required type="email" id="email" name = "email">
         
-        additional input type where the user can enter additional information in a non text form.
-        all fields except last name are reqired.
-        <label for="mytext">Enter something here:</label>
-        <input required type="text" id="mytext">
-
+        <p id ="iceCream">Favourite ice cream flavour:</p>
+        <label>
+          <input class = "icRadio" selected type="radio" name = "ic" value = "Vanilla">
+          Vanilla
+        </label>
+        <label>
+          <input class = "icRadio" type="radio" name = "ic" value = "Chocolate">
+          Chocolate
+        </label>
+        <label>
+          <input class = "icRadio" type="radio" name = "ic" value = "Strawberry">
+          Strawberry
+        </label>
+        <label>
+          <input class = "icRadio" type="radio" name = "ic" value = "Mint Chip">
+          Mint Chip
+        </label>
         
-        <label for="comment">Comment:</label>
+        <label id = "cmnt" for="comment">Comment:</label>
         <textarea required id="comment"></textarea>
         
         <div class="submitWrapper btns">
-          <button class ="btn" id="submitBtn" type="submit">Submit</button>
+          <button class ="btn" id="submitBtn" type="submit" onclick="send()">Submit</button>
         </div>
 
       </form>
+      <script src="portfolio.js"></script>
 </body>
 </html>

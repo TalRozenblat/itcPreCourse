@@ -188,29 +188,47 @@ form{
   display:flex;
   flex-flow: column nowrap;
   border: 3px #9AA692;
-  width: 50%;
+  width: 30%;
   background-color: #9AA692;
   border-radius: 10px;
   margin: 1.5rem 0 0 1.5rem;
   padding: 0.5rem 0 0 0.5rem;
-  height:30rem;
+  height:50rem;
 }
 
-label{
+label, #iceCream{
   font-weight: bold;
   font-size: 1.5rem;
+  margin-bottom: 6px;
+}
+#iceCream{
+
+}
+
+#cmnt {
+  margin-top:1rem;
 }
 
 input{
-  width: 35%;
-  height: 7%;
+  width: 50%;
+  height:4%;
   border-radius: 5px;
   border:0px;
+  margin-bottom: 6px;
+  padding:3px;
+}
+
+.icRadio{
+  width:5%;
+  height: auto;
+  border-radius: 0;
+  margin-bottom: 0px;
+  padding:0px;
 }
 
 textarea{
-  width: 50%;
-  height: 10rem;
+  width: 98%;
+  height: 20rem;
   margin-bottom: 3rem;
   font-size: 0.8rem;
   padding: 10px;
@@ -235,4 +253,8 @@ textarea{
   padding:0;
  
   
+}
+
+iframe{
+  border-radius: 10px;
 }
