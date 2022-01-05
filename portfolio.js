@@ -11,7 +11,7 @@ fetch(GITHUB_URL)
     profileName.innerHTML = data.name;
   });
 
-
+// map solution
 const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');
 let currentlySelected = 0;
@@ -46,17 +46,21 @@ function next() {
   }
 }
 
-function init() {
-  prevBtn.addEventListener("click", function() {
-    previous();
-  });
+prevBtn?.addEventListener("click", function() {
+  previous();
+});
 
-  nextBtn.addEventListener("click", function(e) {
-    next();
-  });
-}
+nextBtn?.addEventListener("click", function(e) {
+  next();
+});
 
-init();
+
+
+//printing form to log solution
+
+const submitBtn = document.getElementById('form');
+submitBtn.addEventListener("submit",  send);
+
 
 
 function findIceCreamChoice(){
@@ -68,16 +72,35 @@ function findIceCreamChoice(){
     }
   }
 }
+let fName = document.getElementById('firstName');
+  let lName = document.getElementById('lastName');
+  let email = document.getElementById('email');
+  let comment = document.getElementById('comment');
 
-function send() {
-    let fName = document.querySelector("#firstName");
-    let lName = document.querySelector("#lastName");
-    let email = document.querySelector("#email");
-    let comment = document.querySelector('#comment');
-    console.log("First name:",fName.value);
-    console.log("Last name:",lName.value);
-    console.log("Email:",email.value);
-    console.log("Comment:",comment.value);
-    console.log("Favourite ice cream flavour:",findIceCreamChoice());
+function send (event) {
+  event.preventDefault()
+  event.stopPropagation()
+  
+  console.log("First name:", fName.value);
+  console.log("Last name:", lName.value);
+  console.log("Emaill", email.value);
+  console.log("Comment:",comment.value);
+  console.log("Favourite ice cream flavour:", findIceCreamChoice());
+
+}
+
+
+//sticky nav bar solution
+window.onscroll = function() {navBarFix()};
+let navbar = document.getElementById("navbar");
+let sticky = navbar.offsetTop;
+
+function navBarFix() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
   }
+}
+
 

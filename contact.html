@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <nav id = "navbar">
         <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
@@ -16,7 +19,7 @@
         </ul>
       </nav>
       <h1 id="letsTalk">Let's talk</h1>
-      <form>
+      <form id="form">
         
         <label for="firstName">First name:</label>
         <input required type="text" id="firstName" name = "firstName">
@@ -29,7 +32,7 @@
         
         <p id ="iceCream">Favourite ice cream flavour:</p>
         <label>
-          <input class = "icRadio" selected type="radio" name = "ic" value = "Vanilla">
+          <input  class = "icRadio"  type="radio" name = "ic" value = "Vanilla">
           Vanilla
         </label>
         <label>
@@ -41,7 +44,7 @@
           Strawberry
         </label>
         <label>
-          <input class = "icRadio" type="radio" name = "ic" value = "Mint Chip">
+          <input checked class = "icRadio" type="radio" name = "ic" value = "Mint Chip">
           Mint Chip
         </label>
         
@@ -49,7 +52,7 @@
         <textarea required id="comment"></textarea>
         
         <div class="submitWrapper btns">
-          <button class ="btn" id="submitBtn" type="submit" onclick="send()">Submit</button>
+          <button class ="btn" id="submitBtn" type="submit">Submit</button>
         </div>
 
       </form>

@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <nav id = "navbar">
         <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
@@ -16,17 +19,29 @@
         </ul>
       </nav>
 
-    <section>
-        <div class = "why-code">
-            <h2>Why am I interested in coding?</h2>
-            <p>I first encountered programming in high school, strating with Scratch, then moving on to Visual Basic, Java, and full stack development including HTML, CSS, JavaScript, MySQL.
-            Since then I was always intrigued by Computer Science, and the abillity to create helpful programs and automate certain things, making some tedious jobs much easier. </p>
+    <section  class = "flexRow">
+        <div>
+            <h1>About Me</h1>
+            <div class = "why-code text">
+                <p>I first encountered programming in high school, strating with Scratch, then moving on to Visual Basic, Java, and full stack development including HTML, CSS, JavaScript, MySQL.
+                Since then I was always intrigued by Computer Science, and the abillity to create helpful programs and automate certain things.
+                
+                <p>After highschool I served in the IDF's recruitment office, being in charge of Israeli citizens who left Israel, making sure those who are in need of enlising do so, and helping those who do not have to, but want to enlist, do so.
+                After my service I worked at a gas station and later on advanced to a managing role there.</p>
+                <p> While working I improved my grades in math and the Psychometric test, in my efforts of going to college for a CS degree.</p>
+                <p> In February 2021 I started my first semester of CS, but after 2 semseters, I have come to the conclusion that this was not the route best suited for me, and decided to quit.
+                At the moment, I am taking part of a Fullstack web development course ran by ITC.</p>
+    
+                <p> In my free time I like to work out, and play the bass guitar.</p>
+                
+            </div>
         </div>
+        <img src = "./images/1.jpg" height = 450px id = "picOfMe">
     </section>
     <section>
         <div class = "cities">
             <div class ="cities text">
-                <h2>Where I come from</h2>  
+                <h1>Where I come from</h1>  
                 <p>I was born in Kaplan Hospitel in Rehovot, and grew up in Ashdod.
                     Spent most of army service in Beer Sheva, and from then on moved to Tel-Aviv, Yafo.
                     I would like to visit Chihuahua in Mexico and board the El Chepe, riding all the way to Los Mochis.
