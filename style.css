@@ -4,28 +4,12 @@
 }
 
 body {
-  /*background-image: linear-gradient(to bottom right, lightgray, white);*/
   background-color:#C1D9D2;
-  font-family: sans-serif;
   font-size: 16px;
   height: 100vh;
   margin: 0;
   padding: 0;
   color: #19402A;
-
-}
-
-.button {
-  background-color: #3d6ded;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 18px;
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
-  width: 120px;
 }
 
 .card {
@@ -40,16 +24,43 @@ body {
   justify-content: center;
   margin: 50px;
   padding: 50px;
+  filter: grayscale();
+	border: solid whitesmoke;
+	transition: filter 0.4s ease-in-out;
+  cursor: pointer;
+  transition-duration: 0.4s;
 }
 
-.nav-item {
-  align-self: flex-end;
-  color: #3d6ded;
-  font-size: 18px;
-  margin: 15px;
-  text-decoration: none;
+.card:hover #myName::after{
+  width: 100%;
+	left: 0;
 }
 
+.card:after {
+  content: "";
+  background: #69BFA0;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.card:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.card:focus { 
+  outline:0;
+ }
+
+ 
 .page-wrapper {
   align-items: center;
   flex-direction: column;
@@ -298,7 +309,7 @@ iframe{
 }
 
 footer{
-  width: 30%;
+  width: 100%;
   margin-top: 3rem;
 }
 
@@ -306,7 +317,8 @@ footer{
   display:flex;
   list-style-type: none;
   padding: 0;
-  margin: 0 0 0 10rem;
+  margin: 0;;
+  justify-content: center;
 }
 
 .footer li{
@@ -319,6 +331,7 @@ footer{
   text-decoration: none;
   display: block;
   padding: 0.5rem;
+  color: #19402A; 
 }
 
 .footerContainer{
@@ -328,8 +341,11 @@ footer{
 }
 
 .footerText{
-  margin-left: 6rem;
+  margin-left: 0;
+  justify-content: center;
+  display: flex;
 }
+
 
 
 .card{
@@ -365,29 +381,3 @@ footer{
 	transition: all 0.4s ease-in-out;
 }
 
-.card:hover #myName::after{
-  width: 100%;
-	left: 0;
-}
-
-.card:after {
-  content: "";
-  background: #69BFA0;
-  display: block;
-  position: absolute;
-  padding-top: 300%;
-  padding-left: 350%;
-  margin-left: -20px;
-  margin-top: -120%;
-  opacity: 0;
-  transition: all 0.8s
-}
-
-.card:active:after {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: 0s
-}
-
-.card:focus { outline:0; }
