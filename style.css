@@ -74,9 +74,8 @@ body {
 nav{
   width: 100%;
   overflow: hidden;
- 
-  
 }
+
 nav ul{
   list-style-type: none;
   padding: 0;
@@ -295,4 +294,8 @@ iframe{
 .flexRow{
   display:flex;
   margin-bottom:3rem;
+}
+
+.content {
+  padding-top: 16px;
 }

@@ -16,6 +16,30 @@ fetch(GITHUB_URL)
 
   });
 
+
+
+
+  //sticky nav bar solution
+
+window.onscroll = function() {navBarFix()};
+let navbar = document.getElementById('navbar');
+let sticky = navbar.offsetTop;
+
+
+function navBarFix() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } 
+  else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+
+
+
+
+
 // map solution
 const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');
@@ -93,26 +117,11 @@ for (let i = 0; i < formNodes.length; i++) {
 }
 
 function checkFields() {
-  if (fName.value && email.value && comment.value && comment.value) {
+  if (fName.value && email.value && comment.value) {
     submitBtn.removeAttribute("disabled");
   }
   else {
     submitBtn.setAttribute("disabled", true);
   }
 }
-
-//sticky nav bar solution
-window.onscroll = function() {navBarFix()};
-let navbar = document.getElementById("navbar");
-let sticky = navbar.offsetTop;
-
-function navBarFix() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } 
-  else {
-    navbar.classList.remove("sticky");
-  }
-}
-
 
