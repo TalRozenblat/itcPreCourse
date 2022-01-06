@@ -109,7 +109,8 @@ let sticky = navbar.offsetTop;
 function navBarFix() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
-  } else {
+  } 
+  else {
     navbar.classList.remove("sticky");
   }
 }
