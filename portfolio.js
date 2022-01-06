@@ -17,14 +17,11 @@ fetch(GITHUB_URL)
   });
 
 
-
-
-  //sticky nav bar solution
+//sticky nav bar solution
 
 window.onscroll = function() {navBarFix()};
 let navbar = document.getElementById('navbar');
 let sticky = navbar.offsetTop;
-
 
 function navBarFix() {
   if (window.pageYOffset >= sticky) {
@@ -38,7 +35,7 @@ function navBarFix() {
 
 //footer solution
 
-const codingLanguages = ['HTML', 'CSS', 'JavaScript', ];
+const codingLanguages = ['HTML', 'CSS', 'JavaScript'];
 const footerText = document.querySelector('.footerText');
 let stringToAdd = "";
 
@@ -110,9 +107,22 @@ submitAct.addEventListener("submit", send);
 const submitBtn = document.getElementById('submitBtn');
 
 const fName = document.getElementById('firstName');
-const lName = document.getElementById('lastName');
 const email = document.getElementById('email');
 const comment = document.getElementById('comment');
+
+const formNodes = document.querySelectorAll('.formField');
+for (let i = 0; i < formNodes.length; i++) {
+  formNodes[i].onchange = checkFields;
+}
+
+function checkFields() {
+  if (fName.value && email.value && comment.value) {
+    submitBtn.removeAttribute("disabled");
+  }
+  else {
+    submitBtn.setAttribute("disabled", true);
+  }
+}
 
 
 function send(event) {
@@ -128,18 +138,3 @@ function send(event) {
     }
   })
 }
-
-const formNodes = document.querySelectorAll('.formField');
-for (let i = 0; i < formNodes.length; i++) {
-  formNodes[i].onchange = checkFields
-}
-
-function checkFields() {
-  if (fName.value && email.value && comment.value) {
-    submitBtn.removeAttribute("disabled");
-  }
-  else {
-    submitBtn.setAttribute("disabled", true);
-  }
-}
-
