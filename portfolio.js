@@ -36,7 +36,25 @@ function navBarFix() {
 }
 
 
+//footer solution
 
+const codingLanguages = ['HTML', 'CSS', 'JavaScript', ];
+const footerText = document.querySelector('.footerText');
+let stringToAdd = "";
+
+for(let i = 0; i < codingLanguages.length; i++){
+  if(i === 0){
+    stringToAdd += (" " + codingLanguages[i]);
+  }
+  else if(i<codingLanguages.length - 1){
+    stringToAdd += (", " + codingLanguages[i]);
+  }
+  else{
+    stringToAdd += (" and " + codingLanguages[i] + ".");
+  }
+}
+
+footerText.textContent += (stringToAdd);
 
 
 
