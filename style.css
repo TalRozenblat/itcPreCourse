@@ -74,6 +74,7 @@ body {
 nav{
   width: 100%;
   overflow: hidden;
+  
 }
 nav ul{
   list-style-type: none;
@@ -216,12 +217,13 @@ label, #iceCream{
 }
 
 input{
-  width: 30%;
+  width: 13rem;
   height:4%;
   border-radius: 5px;
   border:0px;
   margin-bottom: 6px;
   padding:3px;
+  
 }
 
 .icRadio{
@@ -248,11 +250,11 @@ textarea{
 #submitBtn{
   width: 20%;
   margin-bottom:1rem;
-  
+  min-width: fit-content;
 }
 
 #submitBtn:disabled{
-  background-color:  #69BFA0;
+  background-color:  lightgrey;
   color:#19402A;
   cursor:not-allowed;
 }

@@ -22,37 +22,37 @@
       <form id="form">
         
         <label for="firstName">First name:</label>
-        <input required type="text" id="firstName" name = "firstName">
+        <input type="text" id="firstName" name = "First Name" class="formField  to-print">
         
         <label for="lastName">Last name:</label>
-        <input type="text" id="lastName" name = "lastName">
+        <input type="text" id="lastName" name = "Last name" class="to-print">
         
         <label for="email">Email:</label>
-        <input required type="email" id="email" name = "email">
+        <input type="email" id="email" name = "Emaill" class="formField to-print">
         
         <p id ="iceCream">Favourite ice cream flavour:</p>
         <label>
-          <input  class = "icRadio"  type="radio" name = "ic" value = "Vanilla">
+          <input class = "icRadio to-print"  type="radio" name = "ic" value = "Vanilla">
           Vanilla
         </label>
         <label>
-          <input class = "icRadio" type="radio" name = "ic" value = "Chocolate">
+          <input class = "icRadio to-print" type="radio" name = "ic" value = "Chocolate">
           Chocolate
         </label>
         <label>
-          <input class = "icRadio" type="radio" name = "ic" value = "Strawberry">
+          <input class = "icRadio to-print" type="radio" name = "ic" value = "Strawberry">
           Strawberry
         </label>
         <label>
-          <input checked class = "icRadio" type="radio" name = "ic" value = "Mint Chip">
+          <input checked class = "icRadio to-print" type="radio" name="ic" value = "Mint Chip">
           Mint Chip
         </label>
         
         <label id = "cmnt" for="comment">Comment:</label>
-        <textarea required id="comment"></textarea>
+        <textarea id="comment" name="Comment" class = "formField to-print"></textarea>
         
         <div class="submitWrapper btns">
-          <button class ="btn" id="submitBtn" type="submit">Submit</button>
+          <button disabled class ="btn" id="submitBtn" type="submit">Submit</button>
         </div>
 
       </form>
